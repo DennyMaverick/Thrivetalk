@@ -1,0 +1,115 @@
+.contacts__inner {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width:991px) {
+  .contacts__inner {
+    flex-direction: column;
+  }
+}
+.contacts__inner-content {
+  background-color: #22356F;
+  padding-top: 10.3rem;
+  padding-left: 18rem;
+  padding-right: 6rem;
+}
+@media (max-width:1199px) {
+  .contacts__inner-content {
+    padding-left: 8rem;
+  }
+}
+@media (max-width:991px) {
+  .contacts__inner-content {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    order: 2;
+  }
+}
+@media (max-width:767px) {
+  .contacts__inner-content {
+    background: #2193b0;
+    background: -webkit-linear-gradient(to bottom, #2193b0, #6dd5ed);
+    background: linear-gradient(to bottom, #2193b0, #6dd5ed);
+  }
+}
+@media (max-width:568px) {
+  .contacts__inner-content {
+    padding-left: 5rem;
+    padding-right: 3rem;
+  }
+}
+.contacts__inner-content--title {
+  font-size: 1.6rem;
+  line-height: 1.2rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: 400;
+  margin-bottom: 23rem;
+}
+@media (max-width:1199px) {
+  .contacts__inner-content--title {
+    margin-bottom: 10rem;
+  }
+}
+@media (max-width:991px) {
+  .contacts__inner-content--title {
+    margin-bottom: 4rem;
+  }
+}
+.contacts__inner-content--subtitle {
+  font-size: 6.4rem;
+  line-height: 9.4rem;
+  letter-spacing: -0.01em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-bottom: 5rem;
+}
+@media (max-width: 1240px) {
+  .contacts__inner-content--subtitle {
+    font-size: 4rem;
+  }
+}
+@media (max-width:568px) {
+  .contacts__inner-content--subtitle {
+    font-size: 2.9rem;
+    line-height: 4rem;
+  }
+}
+.contacts__inner-content--text {
+  font-size: 3.6rem;
+  line-height: 5.3rem;
+  letter-spacing: -0.005em;
+  color: #FFFFFF;
+  margin-bottom: 7.5rem;
+}
+@media (max-width: 1240px) {
+  .contacts__inner-content--text {
+    font-size: 2.3rem;
+  }
+}
+@media (max-width:568px) {
+  .contacts__inner-content--text {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+.contacts__inner-photo img {
+  display: block;
+}
+@media (max-width:991px) {
+  .contacts__inner-photo {
+    align-self: flex-end;
+    order: 1;
+  }
+  .contacts__inner-photo img {
+    width: 360px;
+  }
+}
+@media (max-width:767px) {
+  .contacts__inner-photo {
+    display: none;
+  }
+}
+/*# sourceMappingURL=contacts.css.map */

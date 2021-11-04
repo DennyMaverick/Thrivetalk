@@ -1,0 +1,48 @@
+.btn {
+  letter-spacing: 0.1em;
+  font-size: 0.66em;
+  min-width: 15rem;
+  height: 5rem;
+  border: none;
+  background: none;
+  font-family: inherit;
+  color: #FAB63E;
+  padding: 1rem 3rem 1.1rem;
+  outline-color: #22356F;
+  cursor: pointer;
+}
+@media (max-width:568px) {
+  .btn {
+    padding: 1rem 1rem 1.1rem;
+    min-width: 7rem;
+    height: auto;
+    font-size: 0.55em;
+  }
+}
+.btn:hover {
+  background-color: #FAB63E;
+  color: #FFFFFF;
+}
+.btn--lightblue {
+  color: #62D0DF;
+  margin-left: -3rem;
+}
+@media (max-width:767px) {
+  .btn--lightblue {
+    color: #22356F;
+  }
+}
+@media (max-width:568px) {
+  .btn--lightblue {
+    margin-left: -1rem;
+  }
+}
+.btn--ml {
+  margin-left: -3rem;
+}
+@media (max-width:568px) {
+  .btn--ml {
+    margin-left: -1rem;
+  }
+}
+/*# sourceMappingURL=btn.css.map */

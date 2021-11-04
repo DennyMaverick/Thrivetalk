@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'Larsseit';
+    src: url('../fonts/9215-webfont.woff2') format('woff2'),
+         url('../fonts/9215-webfont.woff') format('woff'),
+         url('../fonts/9215.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+html {
+	font-size: 10px;
+}
+
+
+*,
+::after,
+::before {
+	box-sizing: border-box;
+}
+
+p, h1, h2,
+ h3, h4, h5,
+ ul, body, html {
+ 	margin: 0;
+ }
+ ul {
+     padding: 0;
+     list-style-position: inside;
+ }
+
+body {
+   
+background: url(../images/Component.png) top right no-repeat;
+font-family: 'Larsseit'; 
+font-size: 2.4rem;
+    @media @notebook {
+        background-size: 80%;
+    }
+}
+
+.service__item {
+	&--L {
+	&--three {
+			background: url("../images/joanna-kosinska-340748.png") center no-repeat;
+            background-size: cover;
+		}
+    }
+}
+
+
+
+@import "blocks/header";
+@import "blocks/footer";
+@import "blocks/container";
+@import "blocks/vars";
+@import "blocks/intro";
+@import "blocks/achievment";
+@import "blocks/about";
+@import "blocks/services";
+@import "blocks/mixins";
+@import "blocks/skills";
+@import "blocks/also";
+@import "blocks/btn";
+@import "blocks/contacts";
+@import "blocks/header-mobile";
+@import "blocks/burger-menu";
+@import "blocks/helpers";

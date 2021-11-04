@@ -1,0 +1,125 @@
+.footer__inner {
+  display: flex;
+}
+@media (max-width:1199px) {
+  .footer__inner {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+}
+@media (max-width:991px), (max-width:1199px) {
+  .footer__inner {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+}
+.footer__inner-content {
+  display: flex;
+  padding-top: 9.8rem;
+  padding-left: 6.8rem;
+  padding-bottom: 3rem;
+}
+@media (max-width:991px) {
+  .footer__inner-content {
+    flex-direction: column;
+  }
+}
+.footer__inner-content--title {
+  font-size: 1.4rem;
+  line-height: 1.1rem;
+  letter-spacing: -0.006em;
+  font-weight: 700;
+  color: #22356F;
+  text-transform: uppercase;
+  margin-bottom: 5.4rem;
+}
+@media (max-width:991px) {
+  .footer__inner-content--title {
+    margin-right: 10rem;
+  }
+}
+.footer__inner-content--text {
+  font-size: 1.4rem;
+  line-height: 2.3rem;
+  letter-spacing: -0.006em;
+  color: rgba(34, 53, 111, 0.5);
+}
+@media (max-width:991px) {
+  .footer__inner-content--text {
+    width: 300px;
+  }
+}
+.footer__inner-content--text--address {
+  margin-bottom: 4.3rem;
+}
+.footer__inner-content--text--email a {
+  text-decoration: none;
+  color: #62D0DF;
+}
+.footer__inner-content--text--phone a {
+  text-decoration: none;
+  color: rgba(34, 53, 111, 0.5);
+}
+@media (max-width:1199px) {
+  .footer__inner-content {
+    padding-left: 0;
+  }
+}
+.footer__inner-content_item {
+  display: flex;
+  flex-direction: column;
+  width: 33.33333%;
+}
+@media (max-width:991px) {
+  .footer__inner-content_item {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .footer__inner-content_item:last-child {
+    margin-bottom: 0;
+  }
+}
+.footer__inner-content_item:first-child {
+  padding-right: 7rem;
+}
+@media (max-width:991px) {
+  .footer__inner-content_item:first-child {
+    padding-right: 0;
+  }
+}
+.footer__inner-photo {
+  align-self: center;
+}
+.footer__inner-photo img {
+  display: block;
+}
+@media (max-width:1199px) {
+  .footer__inner-photo {
+    display: none;
+  }
+}
+.footer__after-all {
+  display: flex;
+  background-color: #62D0DF;
+  height: 8rem;
+}
+.footer__after-all--copy {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 1.1rem;
+  letter-spacing: -0.006em;
+  color: #FFFFFF;
+  margin: auto 19rem;
+}
+.footer__after-all--copyright {
+  margin-right: 0.7rem;
+}
+.footer__after-all--copyright .far {
+  color: #FFFFFF;
+  font-size: 11px;
+}
+/*# sourceMappingURL=footer.css.map */

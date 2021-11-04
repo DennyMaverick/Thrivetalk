@@ -1,0 +1,46 @@
+@import "vars";
+
+.skills {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 4rem;
+	@media @notebook-big {
+		margin-bottom: 10rem;
+	}
+		@media @tablet {
+			margin-bottom: 5rem;
+	}
+}
+.skill__item {
+	width: 33.33333%;
+	// height: 35rem;
+	max-width: 48rem;
+	padding: 5.5rem 10.7rem 3.7rem 10.5rem;
+	@media @notebook {
+		padding: 5.5rem 7.2rem 3.7rem 7rem;
+	}
+		@media @tablet {
+			width: 50%;
+			padding: 4.4rem 7rem 4rem 7rem;
+		}
+			@media @mobile-sm {
+				width: 100%;
+				padding: 2.4rem 5rem 2rem 5rem;
+			}
+
+	&--title {
+		font-size: 2.8rem;
+		line-height: 3.281rem;
+		letter-spacing: -0.03em;
+		color: @darkblue;
+		margin-bottom: 2.8rem;
+	}
+	&--text {
+		font-size: 1.6rem;
+		line-height: 2.5rem;
+		letter-spacing: -0.03em;
+		color: fade(#22356F,50%);
+	}
+}

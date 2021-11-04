@@ -1,0 +1,77 @@
+@import "vars";
+.btn {
+	letter-spacing: 0.1em;
+	font-size: .66em;
+	min-width: 15rem;
+	border: none;
+	background: none;
+	font-family: inherit;
+	color: @orange;
+	padding: 1.1rem 3rem 1.1rem;
+	outline-color: @darkblue;
+	cursor: pointer; 
+	margin-left: -3rem;
+		@media @mobile-sm {
+			padding: 1rem 1rem 1.1rem;
+			min-width: 7rem;
+			height: auto;
+
+			font-size: .55em;
+			margin-left: 0;
+		}
+	&:hover {
+		background-color: @orange;
+		color: @white;
+	}
+	&--lightblue {
+		color: @lightblue;
+		margin-left: -3rem;
+		display: flex;
+		align-self: flex-start;
+				@media @mobile-sm {
+					margin-left: -1rem;
+			}
+	}
+	&--ml {
+		display: flex;
+		align-self: flex-start;
+		margin-left: -3rem;
+		margin-top: 15.2rem;
+			@media @mobile-sm {
+				margin-left: -1rem;
+			}
+			@media @tablet {
+				margin-top: 6rem;
+			}
+	}
+}
+ .btn-primary {
+	min-width: 15rem;
+	height: 5rem;
+	font-size: 14px;
+	color: @white;
+	font-family: inherit;
+	background-color: @lightblue;
+	border: none;
+	border-radius: 5rem;
+	text-transform: uppercase;
+	outline-color: @darkblue;
+	cursor: pointer;
+		@media @tablet {
+			min-width: 13.5rem;
+			height: 4.3rem;
+	}
+			@media @mobile {
+				min-width: 12rem;
+				height: 3.5rem;
+				
+		}
+			@media @mobile-sm {
+					width: 100%;
+					
+			}
+}
+
+.btn-primary:hover {
+	opacity: .8;
+}

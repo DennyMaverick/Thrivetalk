@@ -1,0 +1,53 @@
+@import "vars";
+
+.header__mobile {
+  display: flex;
+  z-index: 99;
+  position: fixed;
+  width: 80%;
+  top: 2rem;
+  right: 2rem;
+  transform: translateY(-500px);
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5rem;
+  border: 1px solid fade(@darkblue, 20%);
+  background-color: rgba(255, 255, 255, .9);
+
+  border-radius: 2rem;
+  box-shadow: 1px 1px 7px @darkblue;
+}
+
+.header__mobile--appears {
+  transform: translateY(0); 
+}
+.header__mobile--logo {
+font-size: 2.4rem;
+color: @lightblue;
+letter-spacing: -0.035em;
+font-weight: normal;
+line-height: 2.7rem;
+margin-bottom: 2rem;
+}
+.header__mobile--nav {
+font-size: 1.6rem;
+margin-bottom: 2rem;
+display: flex;
+flex-direction: column;	
+a {
+  outline-color: @darkblue;
+  text-decoration: none;
+  color: @darkblue;
+  line-height: 1.6rem;
+  padding-bottom: 0;
+  margin-bottom: 1rem;
+  &:last-child {
+    margin-bottom: 0;
+  }		
+  &:hover {
+    border-bottom: 1px solid @darkblue;
+  }
+    
+}
+          
+}
