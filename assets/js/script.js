@@ -4,6 +4,19 @@ window.addEventListener('DOMContentLoaded', function() {
   const headerMobileNav = document.querySelector('.header__mobile');
   const overlayModal = document.querySelector(".overlay-modal-mobile");
   const bodyElement = document.querySelector("body");
+  const activeLinks = document.querySelectorAll(".header__mobile--nav a");
+
+  activeLinks.forEach(function (item) {
+    item.addEventListener("click", function () {
+      console.log("yea");
+      //  скрыть модальное окно - оверлэй
+      overlayModal.classList.add("hidden");
+      // убрать бургер-иконке класс active
+      burgerIcon.classList.remove("active");
+      // убрать мобильную навигацию
+      headerMobileNav.classList.remove("header__mobile--appears");
+    });
+  });
 
   burgerMenu.addEventListener('click', function() {
     // запретить скролл
