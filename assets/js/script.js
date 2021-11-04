@@ -8,13 +8,14 @@ window.addEventListener('DOMContentLoaded', function() {
 
   activeLinks.forEach(function (item) {
     item.addEventListener("click", function () {
-      console.log("yea");
       //  скрыть модальное окно - оверлэй
       overlayModal.classList.add("hidden");
       // убрать бургер-иконке класс active
       burgerIcon.classList.remove("active");
       // убрать мобильную навигацию
       headerMobileNav.classList.remove("header__mobile--appears");
+      // разрешить скролл
+        bodyElement.classList.remove("no-scroll");
     });
   });
 
@@ -49,6 +50,8 @@ window.addEventListener('DOMContentLoaded', function() {
       overlayModal.classList.add("hidden");
       // скрыть меню бомильной навигации
       headerMobileNav.classList.remove("header__mobile--appears");
+      // разрешить скролл
+      bodyElement.classList.remove("no-scroll");
     }
   });
 
