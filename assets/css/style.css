@@ -5,6 +5,7 @@
   font-style: normal;
 }
 html {
+  position: relative;
   font-size: 10px;
 }
 *,
@@ -1052,7 +1053,7 @@ body {
   align-items: flex-start;
   padding: 5rem;
   border: 1px solid rgba(34, 53, 111, 0.2);
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #fff;
   border-radius: 2rem;
   box-shadow: 1px 1px 7px #22356f;
 }
@@ -1139,6 +1140,15 @@ body {
   transform: rotate(-45deg);
   transition: transform .3s ease, top .3s ease;
 }
+.overlay-modal-mobile {
+  position: absolute;
+  z-index: 98;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(98, 208, 223, 0.9);
+}
 .img {
   max-width: 100%;
   height: auto;
@@ -1149,4 +1159,7 @@ body {
 }
 .hidden {
   display: none;
+}
+.no-scroll {
+  overflow: hidden;
 }
