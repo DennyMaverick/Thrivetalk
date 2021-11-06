@@ -43,7 +43,6 @@ body {
   background-size: cover;
 }
 .header__inner {
-  position: relative;
   z-index: 1000;
   margin-top: 3.1rem;
   display: flex;
@@ -245,22 +244,18 @@ body {
   margin-left: auto;
 }
 .intro {
-  margin-top: 16.1rem;
-  margin-bottom: 8.1rem;
-}
-@media (max-width:1199px) {
-  .intro {
-    padding-right: 5rem;
-  }
+  padding-top: 16.1rem;
+  padding-bottom: 8.1rem;
 }
 @media (max-width:767px) {
   .intro {
-    margin-top: 10rem;
+    background-color: rgba(233, 223, 223, 0.4);
+    padding-top: 10rem;
   }
 }
 @media (max-width:568px) {
   .intro {
-    margin-top: 6rem;
+    padding-top: 6rem;
   }
 }
 .intro__inner {

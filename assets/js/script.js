@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', function() {
-  const burgerMenu = document.getElementById('burger');
-  const burgerIcon = document.querySelector('.burger-icon');
-  const headerMobileNav = document.querySelector('.header__mobile');
+  const burgerMenu = document.getElementById("burger");
+  const burgerIcon = document.querySelector(".burger-icon");
+  const headerMobileNav = document.querySelector(".header__mobile");
   const overlayModal = document.querySelector(".overlay-modal-mobile");
   const bodyElement = document.querySelector("body");
   const activeLinks = document.querySelectorAll(".header__mobile--nav a");
@@ -15,32 +15,44 @@ window.addEventListener('DOMContentLoaded', function() {
       // убрать мобильную навигацию
       headerMobileNav.classList.remove("header__mobile--appears");
       // разрешить скролл
-        bodyElement.classList.remove("no-scroll");
+      bodyElement.classList.remove("no-scroll");
     });
   });
-
-  burgerMenu.addEventListener('click', function() {
+  // При клике вне мобильного меню
+  overlayModal.addEventListener("click", function () {
+    // Скрыть мобильное меню
+    headerMobileNav.classList.remove("header__mobile--appears");
+    // убрать оверлэй
+    overlayModal.classList.add("hidden");
+    // добавить стандартное поведение бургер-меню
+    burgerIcon.classList.remove("active");
+    // Разрешить скролл
+    bodyElement.classList.remove("no-scroll");
+  });
+  headerMobileNav.addEventListener("click", function (event) {
+    event.stopPropagation();
+  });
+  burgerMenu.addEventListener("click", function () {
     // запретить скролл
     bodyElement.classList.toggle("no-scroll");
     // показать или убрать мобильную навигацию
-    headerMobileNav.classList.toggle('header__mobile--appears');
-    // показать или скрыть модальное окно - оверлэй 
+    headerMobileNav.classList.toggle("header__mobile--appears");
+    // показать или скрыть модальное окно - оверлэй
     overlayModal.classList.toggle("hidden");
     // добавить или убрать бургер-иконке класс active
-    burgerIcon.classList.toggle('active');
-
+    burgerIcon.classList.toggle("active");
   });
-// скрыть или показать бургер меню
+  // скрыть или показать бургер меню
   if (document.documentElement.clientWidth < 768) {
-    burgerMenu.classList.remove('hidden');
+    burgerMenu.classList.remove("hidden");
   } else {
-    burgerMenu.classList.add('hidden');
+    burgerMenu.classList.add("hidden");
   }
   // скрыть или показать бургер меню при ресайзе окна
-  window.addEventListener('resize', function() {
+  window.addEventListener("resize", function () {
     if (document.documentElement.clientWidth < 768) {
       // до 768px
-      burgerMenu.classList.remove('hidden');
+      burgerMenu.classList.remove("hidden");
     } else {
       // свыше 768px
       burgerMenu.classList.add("hidden");
@@ -54,7 +66,5 @@ window.addEventListener('DOMContentLoaded', function() {
       bodyElement.classList.remove("no-scroll");
     }
   });
-
-
 });
 
