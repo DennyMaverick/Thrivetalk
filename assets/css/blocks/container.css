@@ -13,8 +13,8 @@
 }
 
 .wrapper {
-	background: url(./assets/images/Component.png) top right no-repeat;	
-  margin: 0 auto;
-  max-width: 1400px;
+	background: url(../images/Component.png) top right no-repeat;		
+ 	 margin: 0 auto;
+  	max-width: 1400px;
 }
 
